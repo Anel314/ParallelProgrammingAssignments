@@ -6,3 +6,6 @@
 
 <h1>Cloverleaf / kcachegrind</h1>
 <img width="1193" height="960" alt="Screenshot from 2025-10-16 10-58-22" src="https://github.com/user-attachments/assets/89175f33-04f6-41fa-af73-c648cba4370a" />
+
+<h1>Roofline Toolkit</h1>
+<img width="656" height="593" alt="image" src="https://github.com/user-attachments/assets/8b1fb363-4fa3-4958-91e1-99078894e1fe" />
