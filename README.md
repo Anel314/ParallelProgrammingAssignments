@@ -1,4 +1,4 @@
-# Assignment 3: Memory Allocation Timer
+# Assignment 3:
 
 
 This program is designed to measure the time it takes to allocate, write to, and deallocate memory. 
