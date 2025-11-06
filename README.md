@@ -148,6 +148,24 @@ Where the only interesting part is the "real" time, because it shows the actual 
 
 `stream_opt3 (with flags) : real	0m0.296s`
 
+Another tool i used was operf, this tool will show me the instruction in my code and how much time got spent in each part of the code (in percentages):
+
+operf report for `stream_base`:
+<img width="1737" height="1047" alt="image" src="https://github.com/user-attachments/assets/b37cde23-fffc-4c97-9b44-f2a6a77823e8" />
+
+
+operf report for `stream_opt1`:
+<img width="1465" height="892" alt="image" src="https://github.com/user-attachments/assets/17c49ed7-1ec5-4ad3-9baa-1cc07b52956d" />
+
+
+operf report for `stream_opt2`:
+<img width="1470" height="933" alt="image" src="https://github.com/user-attachments/assets/786175c6-2f22-48d0-81f7-9a539884ba3b" />
+
+
+operf report for `stream_opt3`:
+<img width="1483" height="995" alt="image" src="https://github.com/user-attachments/assets/4f10a1dd-1488-479e-90b5-25ad427e187e" />
+
+
 -----
 ### Questions
 
