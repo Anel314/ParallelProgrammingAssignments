@@ -6,6 +6,7 @@ double timestep(int ncells, double g, double sigma, int* restrict celltype,
                 double* H, double* U, double* V, double* dx, double* dy){
     double wavespeed, xspeed, yspeed, dt;
     double mymindt = 1.0e20;
+    
     for (int ic=0; ic<ncells ; ic++) {
         if (celltype[ic] == REAL_CELL) {
             wavespeed = sqrt(g*H[ic]);
