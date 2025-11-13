@@ -1,0 +1,27 @@
+./stencil_opt2
+Timing is:
+init = 0.005969
+flush = 52.079600
+stencil = 40.309073
+total = 92.445678
+
+
+
+./stencil_opt4
+Timing is:
+init = 0.011873
+flush = 50.236518
+stencil = 38.199187
+total = 88.577971
+
+
+
+./stencil_opt6
+Timing is:
+init = 0.012501
+flush = 49.462540
+stencil = 40.886936
+total = 91.516679
+
+
+
