@@ -1,18 +1,32 @@
 # ParallelProgrammingAssignments
 
+The Stream Triad benchmark is used to measure memory bandwidth and computational performance.
+
+
 # CUDA 
 <img width="418" height="1864" alt="image" src="https://github.com/user-attachments/assets/04663e6c-80a4-4969-bab4-a71b029d7b55" />
 
+The CUDA Stream Triad fails because i run a system with an AMD gpu which is not compatible with NVIDIA’s CUDA platform. 
+And that why the GPU kernel did not run, leaving the result array c filled with zeros. 
+All iterations caused errors because the expected computation was never performed. 
+The timing measurements for kernel execution and data transfer are zero because of it.
 
 # OCL
 <img width="1198" height="649" alt="image" src="https://github.com/user-attachments/assets/f20407a8-eeb6-4e4d-bd7f-c6fb2d403871" />
 
+The code did compile correctly, even tho there are some warnings (deprecated funtions).
+But again, because it failed to locate a GPU device the program crashed.
 
 # OMP
 
 <img width="1046" height="217" alt="image" src="https://github.com/user-attachments/assets/573eb053-dcfe-46eb-bb43-a88759f2c1a8" />
 
+This is the first one that actually ran correctly on my device, this is because this code ran on the CPU.
+It gave an output of `0.029362 msecs`, which is the mean execution time for the benchmark.
 
 # openacc
 
 <img width="1052" height="681" alt="image" src="https://github.com/user-attachments/assets/886f7763-f6cd-4ffa-95f1-14340e235e1c" />
+
+So similar to the omp version, this one also ran on the CPU which is why it succeeded.
+The code that is executed is the original C code, even with the compiler detecting OpenACC parallelism. Instead of offloading to a GPU, the `fopenacc` flags probably used vectorization or multi-core CPU parallelism to optimize the CPU-based loops. The compiler is just attempting to parallelize the standard C loops on the CPU cores it has access to because the code has no OpenACC directives. 
