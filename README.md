@@ -36,3 +36,24 @@ The code that is executed is the original C code, even with the compiler detecti
 # Notice
 
 On some of the makefiles for these StreamTriads there was the flag `-qthreaded` because my system did not find the correct compiler for it, it recommended to use `-qthreaded` instead, which allowed me to run them.
+
+# LAB PC
+
+<img width="687" height="656" alt="image" src="https://github.com/user-attachments/assets/20ea2035-3b4f-4af8-90bf-9f9dc2908919" />
+
+What we can notice here:
+why kern2 is the slowest, the work is being ofloaded to the gpu but the data overhead is huge, the data is not stored on the gpu which led to a significant performance decrease instead of increase, the next optimizations are there to resolve this issue.
+
+
+The kern2 is using the `restring` keyword upon variable declaration, which signals to the compiler that there will be no overlap between those variables, which means that the compiler can parallelize this execution.
+
+The kern3 is optimizing the data overhead, by creating the variables directly on the gpu, which led to significant performance increase. 
+
+
+Same goes for the par programs, par4 is the most optimized by adding restrict on the variables and using `acc_malloc(...)` which allocates space for the variables on the gpu rather than on the cpu memory.
+
+
+
+
+
+
