@@ -30,3 +30,9 @@ It gave an output of `0.029362 msecs`, which is the mean execution time for the 
 
 So similar to the omp version, this one also ran on the CPU which is why it succeeded.
 The code that is executed is the original C code, even with the compiler detecting OpenACC parallelism. Instead of offloading to a GPU, the `fopenacc` flags probably used vectorization or multi-core CPU parallelism to optimize the CPU-based loops. The compiler is just attempting to parallelize the standard C loops on the CPU cores it has access to because the code has no OpenACC directives. 
+
+
+
+# Notice
+
+On some of the makefiles for these StreamTriads there was the flag `-qthreaded` because my system did not find the correct compiler for it, it recommended to use `-qthreaded` instead, which allowed me to run them.
