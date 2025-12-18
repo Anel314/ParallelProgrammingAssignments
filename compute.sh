@@ -2,7 +2,7 @@
 #SBATCH -J compute_work
 #SBATCH -N 1
 #SBATCH -n 1
-#SBATCH -t 00:05:00
+#SBATCH -t 00:00:10
 #SBATCH -o work_%j.out
 
 echo "Job started at $(date)"

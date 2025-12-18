@@ -2,7 +2,7 @@
 #SBATCH -J overload
 #SBATCH -N 1
 #SBATCH -n 1
-#SBATCH -t 00:02:00
+#SBATCH -t 00:02s:00
 #SBATCH -o overload_%j.out
 
 echo "Job ID: $SLURM_JOB_ID"

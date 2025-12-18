@@ -1,0 +1,5 @@
+Job started at Thu Dec 18 03:55:54 PM CET 2025
+Job ID: 35
+Running on: AnelHP
+Using 1 processors
+slurmstepd-AnelHP: error: *** JOB 35 ON AnelHP CANCELLED AT 2025-12-18T15:57:03 DUE TO TIME LIMIT ***

@@ -1,0 +1,6 @@
+Job ID: 28
+Requested: 1 CPUs
+Running stress on 1 cores
+Started at Thu Dec 18 03:39:45 PM CET 2025
+stress: info: [147536] dispatching hogs: 4 cpu, 0 io, 0 vm, 0 hdd
+slurmstepd-AnelHP: error: *** JOB 28 ON AnelHP CANCELLED AT 2025-12-18T15:40:41 ***
