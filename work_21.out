@@ -1,0 +1,5 @@
+Job started at Thu Dec 18 03:22:45 PM CET 2025
+Job ID: 21
+Running on: AnelHP
+Using 1 processors
+slurmstepd-AnelHP: error: *** JOB 21 ON AnelHP CANCELLED AT 2025-12-18T15:23:15 ***

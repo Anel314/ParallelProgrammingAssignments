@@ -1,0 +1,7 @@
+Job ID: 16
+Requested: 1 CPUs
+Running stress on 1 cores
+Started at Thu Dec 18 03:11:35 PM CET 2025
+stress: info: [120742] dispatching hogs: 1 cpu, 0 io, 0 vm, 0 hdd
+stress: info: [120742] successful run completed in 60s
+Finished at Thu Dec 18 03:12:35 PM CET 2025
